@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+body {
+    margin: 0.5;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+   margin: 60px;
+   padding: 40px;
+   font-size: 40px;
+   text-align: center;
+}
+
+p {
+   font-size: 20px;
+}
+
+
+.skip {
+	padding: 60px;
+	text-decoration: none;
+  color: #000000;
+	position: relative;
+  top: -40px;
+  transition: top ease-in 2s;
+}
+
+.skip:focus{
+	background: #000000;
+	top: -40px;
+	border: 1px solid black;
+}
+
+.fa-angle-double-down {
+  font-size: 3em;
+  color: #ffffff;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/intro/thomas.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: none;
+}
+
+
+.background h1 {
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    color: #ffffff
+}
+
+.background h2 {
+    font-size: 15px;
+    color: #ffffff
+}
+
+.background .btn {
+    display: block;
+    width: 200px;
+
+
+    padding: 1px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    transition: 0.3s;
+    border: 3px solid #000000;
+
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+
+    background-color: rgba(255, 255, 255)
+
+}
+
+.background .btn:hover {
+   opacity: 1
+}
+
+.current {
+    border: 3px solid #000000;
+    border-width: 5px;
+    padding: 15px;
+}
+
+
+nav {
+  width: 100%;
+  position: absolute;
+  top:50px;
+  text-align:center;
+}
+
+nav .icon {
+  display: none;
+}
+
+nav a{
+  font-family: 'Oswald', sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#16151b;
+  margin:0 10px;
+  font-size:16px;
+  letter-spacing:1px;
+  position:relative;
+  display:inline-block;
+}
+
+nav a:hover {
+    color: #ff0000
+}
+
+
+.text {
+  border: none;
+  padding: 40px;
+  margin: 40px;
+
+}
+
+.photo {
+   border: none;
+   padding: 40px;
+   margin: 40px;
+
+   display: flex;
+   justify-content: center;
+}
+
+
+.gallery1 img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery1 img{
+  border: none;
+  padding: 40px;
+  margin: 40px
+}
+
+.gallery1 img{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.row img{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+.column img{
+  flex: 25%;
+  max-width: 25%;
+  padding: 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.a img{
+  width: 40%;
+  height: 60vh;
+}
+
+
+.b img{
+  width: 40%;
+  height: 60vh;
+}
+
+.c img{
+  width: 30%;
+  height: 70vh;
+}
+
+.d img{
+  width: 40%;
+  height: 50vh;
+}
+
+.e img{
+  width: 40%;
+  height: 50vh;
+}
+
+.f img{
+  width: 40%;
+  height: 50vh;
+}
+
+.g img{
+  width: 20%;
+  height:60vh;
+
+}
+
+.h img{
+  width: 40%;
+  height: 50vh;
+}
+
+.i img{
+  width: 30%;
+  height: 70vh;
+}
+
+.j img{
+  width: 30%;
+  height: 70vh;
+}
+
+.k img{
+  width: 40%;
+  height: 50vh;
+}
+
+.l img{
+  width: 40%;
+  height: 40vh;
+}
+
+.m img{
+  width: 30%;
+  height: 70vh;
+}
+
+.n img{
+  width: 30%;
+  height: 70vh;
+}
+
+.o img{
+  width: 30%;
+  height: 70vh;
+}
+**/
+
+.gallery2 img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gallery2 img{
+  border: none;
+  padding: 40px;
+  margin: 40px
+}
+
+.three img{
+  width: 50%;
+  height: 70vh;
+}
+
+
+@media (prefers-reduced-motion: reduce) (min-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav a:not(:first-child) {display: none;}
+  nav a.icon {
+    float: right;
+    display: block;
+  }
+}
